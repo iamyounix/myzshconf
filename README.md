@@ -92,7 +92,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 * Linux
 
-![Screenshot_20221201_003942](https://user-images.githubusercontent.com/72515939/204856781-c7e4af0a-187f-43cd-a30b-316b48426369.png)
+![terminal](https://user-images.githubusercontent.com/72515939/204913220-c64d4147-ab09-4f03-9a97-e0a9968a0603.png)
 
 * macOS
 
