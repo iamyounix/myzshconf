@@ -27,7 +27,7 @@ Recommend Download: [Fira Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/re
 
 **macOS:** Font Book
 
-![Font Book](https://user-images.githubusercontent.com/72515939/204859011-be7cb0cf-887e-47a7-8185-ee30904eda6c.png)
+![Font Book](https://user-images.githubusercontent.com/72515939/204859719-350922f2-5894-4e58-9760-10f7babaa0b7.png)
 
 ### Install zsh-autosuggestions
 ```zsh
