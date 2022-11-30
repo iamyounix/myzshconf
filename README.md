@@ -21,7 +21,14 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ### Install [Nerfonts](https://www.nerdfonts.com/font-downloads)
 Recommend Download: [Fira Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip), extract downloaded fonts and install using any Font Management `1` to System `2`.
 
+**Linux:** (Font Manager)
+
 ![Font](https://user-images.githubusercontent.com/72515939/204844204-708e1795-91cc-4cf8-a296-70e07ae4a3d7.png)
+
+**macOS:** (Font Book)
+
+![FontsBook](https://user-images.githubusercontent.com/72515939/204847668-89a8fd2c-a492-4d09-8442-f1a2d9870eef.png)
+![FontsBook2](https://user-images.githubusercontent.com/72515939/204847817-e47a8856-b558-4009-950b-682d933df22b.png)
 
 ### Install zsh-autosuggestions
 ```zsh
