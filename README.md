@@ -49,6 +49,12 @@ p10k configure
 ### Setting Terminal
 Use downloaded font on terminal settings
 
+* Linux
+
+![AAA](https://user-images.githubusercontent.com/72515939/204857692-e74ba764-4200-4f47-b7e6-29099bb60fe7.png)
+
+* macOS
+
 > **Note**: For better result on macOS, install iTerm2 and set font using downloaded font.
 ```zsh
 brew install iterm2
