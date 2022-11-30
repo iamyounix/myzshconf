@@ -27,7 +27,7 @@ Recommend Download: [Fira Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/re
 
 **macOS:** Font Book
 
-![FontsBook](https://user-images.githubusercontent.com/72515939/204847668-89a8fd2c-a492-4d09-8442-f1a2d9870eef.png)
+![Font Book](https://user-images.githubusercontent.com/72515939/204859011-be7cb0cf-887e-47a7-8185-ee30904eda6c.png)
 
 ### Install zsh-autosuggestions
 ```zsh
@@ -60,7 +60,7 @@ Use downloaded font on terminal settings
 brew install iterm2
 ```
 
-![iTerm2](https://user-images.githubusercontent.com/72515939/204852071-859426ba-fda4-4c65-9fd2-64ea7b3baeb9.png)
+![Settings](https://user-images.githubusercontent.com/72515939/204859324-50ffdc7b-f47b-4e9e-b8de-744fff0fcfa6.png)
 
 ### Editing zsh config
 ```zsh
@@ -94,4 +94,4 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 * macOS
 
-![iTerm](https://user-images.githubusercontent.com/72515939/204852190-6e7d3746-3856-4b01-8bd6-26a9e79e3933.png)
+![iTerm2](https://user-images.githubusercontent.com/72515939/204859048-7fdfb227-866a-47d7-8cf2-1efaec92b15b.png)
