@@ -23,7 +23,7 @@ Recommend Download: [Fira Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/re
 
 **Linux:** Font Management
 
-![Screenshot_20221201_002615](https://user-images.githubusercontent.com/72515939/204853958-d250a796-f635-463a-b932-8ddcac969c37.png)
+![Screenshot_20221201_003840](https://user-images.githubusercontent.com/72515939/204856525-45f215d7-24cc-47fe-80b4-805f57337e54.png)
 
 **macOS:** Font Book
 
@@ -84,7 +84,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 * Linux
 
-![Screenshot_20221201_002954](https://user-images.githubusercontent.com/72515939/204854357-938acc20-42c6-46ac-8e8c-13b750ec5eab.png)
+![Screenshot_20221201_003942](https://user-images.githubusercontent.com/72515939/204856781-c7e4af0a-187f-43cd-a30b-316b48426369.png)
 
 * macOS
 
