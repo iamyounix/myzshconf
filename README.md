@@ -49,10 +49,13 @@ p10k configure
 ### Setting Terminal
 Use downloaded font on terminal settings
 
-
 * macOS
 
 ![FontsBook2](https://user-images.githubusercontent.com/72515939/204847817-e47a8856-b558-4009-950b-682d933df22b.png)
+
+> **Note**: For better result on macOS, install iTerm2 and set font using downloaded font.
+
+![iTerm2](https://user-images.githubusercontent.com/72515939/204852071-859426ba-fda4-4c65-9fd2-64ea7b3baeb9.png)
 
 ### Editing zsh config
 ```zsh
@@ -79,4 +82,10 @@ and add `zsh-autosuggestions` + `zsh-syntax-highlighting`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
+
+* Linux
 ![ZSH](https://user-images.githubusercontent.com/72515939/204844248-9e3a6650-7f6b-4db8-9312-93cab58d6776.png)
+
+* macOS
+
+![iTerm](https://user-images.githubusercontent.com/72515939/204852190-6e7d3746-3856-4b01-8bd6-26a9e79e3933.png)
