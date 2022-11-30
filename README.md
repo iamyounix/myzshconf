@@ -28,7 +28,6 @@ Recommend Download: [Fira Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/re
 **macOS:** (Font Book)
 
 ![FontsBook](https://user-images.githubusercontent.com/72515939/204847668-89a8fd2c-a492-4d09-8442-f1a2d9870eef.png)
-![FontsBook2](https://user-images.githubusercontent.com/72515939/204847817-e47a8856-b558-4009-950b-682d933df22b.png)
 
 ### Install zsh-autosuggestions
 ```zsh
@@ -47,11 +46,18 @@ p10k configure
 
 ## Beautify
 
+### Setting Terminal
+Use downloaded font on terminal settings
+
+
+* macOS
+
+![FontsBook2](https://user-images.githubusercontent.com/72515939/204847817-e47a8856-b558-4009-950b-682d933df22b.png)
+
 ### Editing zsh config
 ```zsh
 sudo nano ~/.zshrc
 ```
-> **Note**: Depending on user need, either use vim or vifs for macOS.
 
 Set this section
 
