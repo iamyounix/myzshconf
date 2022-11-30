@@ -1,4 +1,4 @@
-# Simple ZSH setting
+# Simple ZSH settings
 My Simple ZSH setting for my terminal
 
 ## Recipe
