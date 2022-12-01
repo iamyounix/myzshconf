@@ -109,7 +109,7 @@ Enter this command:
 sudo nano /etc/pacman.conf 
 ```
 
-and add ILoveCandy at `#Misc option` section
+* and add ILoveCandy at `#Misc option` section
 
 ```nano
 # Misc options
