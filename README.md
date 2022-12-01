@@ -97,3 +97,27 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 * macOS
 
 ![iTerm2](https://user-images.githubusercontent.com/72515939/204859048-7fdfb227-866a-47d7-8cf2-1efaec92b15b.png)
+
+## Extra
+
+### ILoveCandy
+
+Adding pacman like progress bar on terminal (Arch Linux)
+
+Enter this command:
+```zsh
+sudo nano /etc/pacman.conf 
+```
+
+and add ILoveCandy at `#Misc option` section
+
+```nano
+# Misc options
+#UseSyslog
+Color
+ParallelDownloads = 5
+# We cannot check disk space from within a chroot environment
+#CheckSpace
+#VerbosePkgLists
+ILoveCandy
+```
