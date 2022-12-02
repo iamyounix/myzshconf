@@ -34,20 +34,21 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-> **Note**: This will automatically install **auto-suggestions** plugins inside **Oh My ZSH** custom directory. 
+> **Note**: This will automatically install **auto-suggestions** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add auto-suggestions plugin
 
 ### Install highlight syntax
 
 ```zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-> **Note**: This will automatically install **syntax-highlighting** plugins inside **Oh My ZSH** custom directory.
+> **Note**: This will automatically install **syntax-highlighting** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add syntax-hightlighting plugin
 
 ### Configure powerlevel10k
 
 ```zsh
 p10k configure 
 ```
+> **NOte**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
 
 ## Beautify
 
@@ -118,3 +119,7 @@ ParallelDownloads = 5
 #VerbosePkgLists
 ILoveCandy
 ```
+
+## Acknowledgement
+
+[Arch AUR Repo](https://aur.archlinux.org/packages/anycable-go)
