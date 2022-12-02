@@ -1,6 +1,11 @@
 # Simple ZSH settings
 My Simple ZSH setting for my terminal
 
+* [Recipe](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#recipe)
+* [Beautify](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#beautify)
+* [Results](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#results)
+* [Acknowledgement](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#acknowledgement)
+
 ## Recipe
 
 ### Install [zsh](https://aur.archlinux.org/):
@@ -122,4 +127,4 @@ ILoveCandy
 
 ## Acknowledgement
 
-[Arch AUR Repo](https://aur.archlinux.org/packages/anycable-go)
+[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) for Distro
