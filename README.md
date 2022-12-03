@@ -125,6 +125,37 @@ ParallelDownloads = 5
 ILoveCandy
 ```
 
+### Neofetch
+
+* Install `neofetch`.
+
+```zsh
+sudo pacman -Sy neofetch
+```
+
+* Prompt quiet mode to ensure `neofetch` bypass `powerlevel10k` [warning].
+
+```zsh
+sudo nano ~/.p10k.zsh
+```
+
+* Find `typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose` and chamge this mode to `quiet`. ie: `typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`.
+* Save config and head to `~/.zshrc` config.
+
+```zsh
+sudo nano ~./zshrc
+```
+
+* add `neofetch` on ending.
+  * ie:
+
+```zsh
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+  
+neofetch
+```
+
 ## Acknowledgement
 
 [**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) for Distro
