@@ -156,6 +156,8 @@ sudo nano ~./zshrc
 neofetch
 ```
 
+![Screenshot_20221203_193407](https://user-images.githubusercontent.com/72515939/205438921-bc81f460-a35e-4f88-b394-d5a924b61a63.png)
+
 ## Acknowledgement
 
 [**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) for Distro
