@@ -147,7 +147,6 @@ sudo nano ~./zshrc
 ```
 
 * add `neofetch` on ending.
-  * ie:
 
 ```zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
