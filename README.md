@@ -1,4 +1,10 @@
 # Simple ZSH settings
+
+![OS1](https://img.shields.io/badge/OS-macOS-orange)
+![OS2](https://img.shields.io/badge/OS-Linux-white)
+![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
+![Information](https://img.shields.io/badge/Information-Terminal-yellow)
+
 My Simple ZSH setting for my terminal
 
 * [Recipe](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#recipe)
