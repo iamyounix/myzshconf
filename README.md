@@ -1,7 +1,6 @@
 # Simple ZSH settings
 
-![OS1](https://img.shields.io/badge/OS-macOS-orange)
-![OS2](https://img.shields.io/badge/OS-Linux-white)
+![OS](https://img.shields.io/badge/OS-Arch-white)
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
 ![Information](https://img.shields.io/badge/Information-Terminal-yellow)
 
@@ -173,4 +172,4 @@ neofetch
 
 ## Acknowledgement
 
-[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go)
+[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) | [**Oh My ZSH**](https://ohmyz.sh) | [**romkatv**](https://github.com/romkatv)
