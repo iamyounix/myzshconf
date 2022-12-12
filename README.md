@@ -7,6 +7,8 @@
 
 My Simple ZSH setting for my terminal
 
+## Table of Contents
+
 * [Recipe](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#recipe)
 * [Beautify](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#beautify)
 * [Results](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#results)
@@ -17,9 +19,14 @@ My Simple ZSH setting for my terminal
 ### Install [zsh](https://aur.archlinux.org/):
 
 ```zsh
+sudo pacman -Syu
+```
+
+Then...
+
+```zsh
 sudo pacman -Sy zsh
 ```
-> **Note**: Ignore this on macOS
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
@@ -136,16 +143,8 @@ ILoveCandy
 
 * Install `neofetch`.
 
-Linux:
-
 ```zsh
 sudo pacman -Sy neofetch
-```
-
-macOS:
-
-```zsh
-brew install neofetch
 ```
 
 * Prompt quiet mode to ensure `neofetch` bypass `powerlevel10k` [warning].
@@ -174,4 +173,4 @@ neofetch
 
 ## Acknowledgement
 
-[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) for Distro
+[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go)
