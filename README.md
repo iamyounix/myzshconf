@@ -19,6 +19,7 @@ My Simple ZSH setting for my terminal
 ```zsh
 sudo pacman -Sy zsh
 ```
+> **Note**: Ignore this on macOS
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
@@ -135,8 +136,16 @@ ILoveCandy
 
 * Install `neofetch`.
 
+Linux:
+
 ```zsh
 sudo pacman -Sy neofetch
+```
+
+macOS:
+
+```zsh
+brew install neofetch
 ```
 
 * Prompt quiet mode to ensure `neofetch` bypass `powerlevel10k` [warning].
