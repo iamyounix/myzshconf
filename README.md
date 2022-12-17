@@ -15,16 +15,10 @@ My Simple ZSH setting for my terminal
 
 ## Recipe
 
-### Install [zsh](https://aur.archlinux.org/):
+### Updateing and Install [zsh](https://aur.archlinux.org/):
 
 ```zsh
-sudo pacman -Syu
-```
-
-Then...
-
-```zsh
-sudo pacman -Sy zsh
+sudo pacman -Syu zsh
 ```
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
@@ -66,7 +60,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```zsh
 p10k configure 
 ```
-> **NOte**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
+> **Note**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
 
 ## Beautify
 
