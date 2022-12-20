@@ -99,9 +99,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ## Results
 
-* Linux
-
-![Screenshot_20221202_230721](https://user-images.githubusercontent.com/72515939/205324364-a0687f4f-7ba1-4395-a3a7-ec6ffe46ffc0.png)
+![Screenshot_20221220_222100](https://user-images.githubusercontent.com/72515939/208689267-441eeb8c-2399-47ac-b7fb-0018cc5e9242.png)
 
 ## Extra
 
@@ -157,7 +155,7 @@ sudo nano ~./zshrc
 neofetch
 ```
 
-![Screenshot_20221203_193407](https://user-images.githubusercontent.com/72515939/205438921-bc81f460-a35e-4f88-b394-d5a924b61a63.png)
+![Screenshot_20221220_222355](https://user-images.githubusercontent.com/72515939/208689240-42d2b3e8-e97f-411c-904f-2d7753af78b3.png)
 
 ## Acknowledgement
 
