@@ -15,7 +15,7 @@ My Simple ZSH setting for my terminal
 
 ## Recipe
 
-### Updateing and Install [zsh](https://aur.archlinux.org/):
+### Updating and Install [zsh](https://aur.archlinux.org/):
 
 ```zsh
 sudo pacman -Syu zsh
