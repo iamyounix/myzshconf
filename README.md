@@ -50,6 +50,8 @@ The Z shell (also known as `zsh`) is a Unix shell that is built on top of bash (
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
+*  "Oh my Zsh" core
+
 ```zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
