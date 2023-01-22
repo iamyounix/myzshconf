@@ -16,7 +16,9 @@ My Simple ZSH setting for my terminal
 
 ## Introduction
 
-The Z shell (also known as `zsh`) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use `zsh` over `bash`. It's also highly recommended to install a framework with `zsh` as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an `env.sh` file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
+
+
+The Z shell (also known as zsh) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with zsh as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an env.sh file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
 
 ### Updating and Install 
 
@@ -51,7 +53,7 @@ The Z shell (also known as `zsh`) is a Unix shell that is built on top of bash (
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
-*  "Oh my Zsh" core
+*  Install Oh My Zsh
 
     ```zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
