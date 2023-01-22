@@ -8,18 +8,45 @@ My Simple ZSH setting for my terminal
 
 ## Table of Contents
 
-* [Recipe](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#recipe)
-* [Beautify](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#beautify)
-* [Results](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#results)
-* [Acknowledgement](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#acknowledgement)
+* [Introduction](#introduction)
+* [Beautify](#beautify)
+* [Results](#results)
+* [Acknowledgement](acknowledgement)
 
-## Recipe
+## Introduction
 
-### Updating and Install [zsh](https://aur.archlinux.org/):
+The Z shell (also known as `zsh`) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use `zsh` over `bash`. It's also highly recommended to install a framework with `zsh` as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an `env.sh` file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
 
-```zsh
-sudo pacman -Syu zsh
-```
+### Updating and Install 
+
+* Linux
+
+  - Arch:
+
+  ```zsh
+  sudo pacman -Syu zsh
+  ```
+  - Debian:
+
+  ```zsh
+  sudo apt-get zsh
+  ```
+
+* macOS:
+
+  - Homebrew:
+
+  ```zsh
+  brew install zsh
+  ```
+
+### Install [Nerfonts](https://www.nerdfonts.com/font-downloads)
+
+* Recommend Download: [Fira Code Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip), extract downloaded fonts and install using any **Appearence / Font Management** `1`, **Global Theme / FontManagement** `2` to **Group / System Fonts** `3` by select **Install from File** `4`.
+
+  - Font Management
+
+![Screenshot_20221202_231257](https://user-images.githubusercontent.com/72515939/205325060-933e84ea-30bc-411e-b7c7-dc6d365ba5cd.png)
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
@@ -27,40 +54,36 @@ sudo pacman -Syu zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k) in [Oh My Zsh](https://ohmyz.sh/) custom directory
+### Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k) in [Oh My Zsh](https://ohmyz.sh/)
 
-```zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
+* Clone zsh to custom directory
 
-### Install [Nerfonts](https://www.nerdfonts.com/font-downloads)
+  ```zsh
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  ```
 
-* Recommend Download: [Fira Code Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip), extract downloaded fonts and install using any **Appearence / Font Management** `1`, **Global Theme / FontManagement** `2` to **Group / System Fonts** `3` by select **Install from File** `4`.
+* Install zsh-autosuggestions
 
-  * Font Management
+  ```zsh
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+  > **Note**: This will automatically install **auto-suggestions** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add auto-suggestions plugin
 
-![Screenshot_20221202_231257](https://user-images.githubusercontent.com/72515939/205325060-933e84ea-30bc-411e-b7c7-dc6d365ba5cd.png)
+* Install highlight syntax
 
-### Install zsh-autosuggestions
-
-```zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-> **Note**: This will automatically install **auto-suggestions** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add auto-suggestions plugin
-
-### Install highlight syntax
-
-```zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-> **Note**: This will automatically install **syntax-highlighting** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add syntax-hightlighting plugin
+  ```zsh
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ```
+  > **Note**: This will automatically install **syntax-highlighting** plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add syntax-hightlighting plugin
 
 ### Configure powerlevel10k
 
-```zsh
-p10k configure 
-```
-> **Note**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
+* Required if zsh configuration does not automatically start
+
+  ```zsh
+  p10k configure 
+  ```
+  > **Note**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
 
 ## Beautify
 
@@ -72,30 +95,33 @@ p10k configure
 
 
 ### Editing zsh config
-```zsh
-sudo nano ~/.zshrc
-```
 
-  * Set this section
+* Oh My ZSH configuration settings
 
-```nano
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-```
+  ```zsh
+  sudo nano ~/.zshrc
+  ```
 
-  * and add `zsh-autosuggestions` + `zsh-syntax-highlighting`
+  - Set this section
 
-```nano
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-```
+  ```nano
+  # Set name of the theme to load --- if set to "random", it will
+  # load a random theme each time oh-my-zsh is loaded, in which case,
+  # to know which specific one was loaded, run: echo $RANDOM_THEME
+  # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+  ```
+
+  - Add `zsh-autosuggestions` + `zsh-syntax-highlighting`
+
+  ```nano
+  # Which plugins would you like to load?
+  # Standard plugins can be found in $ZSH/plugins/
+  # Custom plugins may be added to $ZSH_CUSTOM/plugins/
+  # Example format: plugins=(rails git textmate ruby lighthouse)
+  # Add wisely, as too many plugins slow down shell startup.
+  plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+  ```
 
 ## Results
 
@@ -105,46 +131,46 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 ### ILoveCandy
 
-Adding pacman like progress bar on terminal (Arch Linux)
+* Adding pacman like progress bar on terminal (Arch Linux)
 
-Enter this command:
-```zsh
-sudo nano /etc/pacman.conf 
-```
+  Enter this command:
+  ```zsh
+  sudo nano /etc/pacman.conf 
+  ```
 
-and add ILoveCandy at `#Misc option` section
+* and add ILoveCandy at `#Misc option` section
 
-```nano
-# Misc options
-#UseSyslog
-Color
-ParallelDownloads = 5
-# We cannot check disk space from within a chroot environment
-#CheckSpace
-#VerbosePkgLists
-ILoveCandy
-```
+  ```nano
+  # Misc options
+  #UseSyslog
+  Color
+  ParallelDownloads = 5
+  # We cannot check disk space from within a chroot environment
+  #CheckSpace
+  #VerbosePkgLists
+  ILoveCandy
+  ```
 
 ### Neofetch
 
 * Install `neofetch`.
 
-```zsh
-sudo pacman -Sy neofetch
-```
+  ```zsh
+  sudo pacman -Sy neofetch
+  ```
 
 * Prompt quiet mode to ensure `neofetch` bypass `powerlevel10k` [warning].
 
-```zsh
-sudo nano ~/.p10k.zsh
-```
+  ```zsh
+  sudo nano ~/.p10k.zsh
+  ```
 
 * Find `typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose` and chamge this mode to `quiet`. ie: `typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`.
 * Save config and head to `~/.zshrc` config.
 
-```zsh
-sudo nano ~./zshrc
-```
+  ```zsh
+  sudo nano ~./zshrc
+  ```
 
 * add `neofetch` on ending.
 
