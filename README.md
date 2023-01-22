@@ -153,6 +153,8 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
   #VerbosePkgLists
   ILoveCandy
   ```
+  
+![Screenshot_20230122_200658](https://user-images.githubusercontent.com/72515939/213914965-eacabfd1-5ef2-44a2-9c6c-e66961efb8d6.png)
 
 ### Neofetch
 
