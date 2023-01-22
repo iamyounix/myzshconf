@@ -11,6 +11,7 @@ My Simple ZSH setting for my terminal
 * [Introduction](#introduction)
 * [Beautify](#beautify)
 * [Results](#results)
+* [Extra](#extra)
 * [Acknowledgement](acknowledgement)
 
 ## Introduction
