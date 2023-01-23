@@ -170,7 +170,7 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
   sudo nano ~/.p10k.zsh
   ```
 
-* Find `typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose` and chamge this mode to `quiet`. ie: `typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`.
+* Find `typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose` and change this mode to `quiet`. ie: `typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`.
 * Save config and head to `~/.zshrc` config.
 
   ```zsh
