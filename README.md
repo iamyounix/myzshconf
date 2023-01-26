@@ -179,12 +179,12 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
 * add `neofetch` on ending.
 
-```zsh
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-  
-neofetch
-```
+  ```zsh
+  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+  neofetch
+  ```
 
 ![Screenshot_20221220_222355](https://user-images.githubusercontent.com/72515939/208689240-42d2b3e8-e97f-411c-904f-2d7753af78b3.png)
 
