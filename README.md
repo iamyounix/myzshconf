@@ -47,7 +47,7 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
   - Font Management
 
-![Screenshot_20221202_231257](https://user-images.githubusercontent.com/72515939/205325060-933e84ea-30bc-411e-b7c7-dc6d365ba5cd.png)
+  <img src="https://user-images.githubusercontent.com/72515939/205325060-933e84ea-30bc-411e-b7c7-dc6d365ba5cd.png" alt="Screenshot_20221202_231257" style="zoom:64%;" />
 
 ### Install [Oh My Zsh](https://ohmyz.sh/)
 
@@ -92,9 +92,10 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
 ### Setting Terminal
 
-* Use downloaded font on terminal settings, choose mono type font. ie: FiraCode Nerd Font Mono
+* Use downloaded font on terminal settings, choose mono type font. ie: FiraCode Nerd Font Mono in KDE.
 
-![AAA](https://user-images.githubusercontent.com/72515939/204857692-e74ba764-4200-4f47-b7e6-29099bb60fe7.png)
+  <img src="https://user-images.githubusercontent.com/72515939/204857692-e74ba764-4200-4f47-b7e6-29099bb60fe7.png" alt="AAA" style="zoom:70%;" />
+
 
 
 ### Editing zsh config
@@ -128,7 +129,7 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
 ## Results
 
-![Screenshot_20221220_222100](https://user-images.githubusercontent.com/72515939/208689267-441eeb8c-2399-47ac-b7fb-0018cc5e9242.png)
+  <img src="https://user-images.githubusercontent.com/72515939/208689267-441eeb8c-2399-47ac-b7fb-0018cc5e9242.png" alt="Screenshot_20221220_222100" style="zoom:74%;" />
 
 ## Extra
 
@@ -182,11 +183,11 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
   ```zsh
   # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
   [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+  
   neofetch
   ```
 
-![Screenshot_20221220_222355](https://user-images.githubusercontent.com/72515939/208689240-42d2b3e8-e97f-411c-904f-2d7753af78b3.png)
+  <img src="https://user-images.githubusercontent.com/72515939/208689240-42d2b3e8-e97f-411c-904f-2d7753af78b3.png" alt="Screenshot_20221220_222355" style="zoom:75%;" />
 
 ## Acknowledgement
 
