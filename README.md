@@ -1,4 +1,4 @@
-# Simple ZSH settings
+# Z Shell Configuration
 
 ![OS](https://img.shields.io/badge/OS-Arch-white)
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
@@ -6,7 +6,7 @@
 
 Table of content
 
-- [Simple ZSH settings](#simple-zsh-settings)
+- [Z Shell Configurations](#z-shell-configuration)
 - [Introduction](#introduction)
   - [Z Shell](#z-shell)
   - [Powerlevel10k](#powerlevel10k)
