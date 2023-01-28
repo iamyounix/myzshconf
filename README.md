@@ -141,4 +141,4 @@ Now, we need to install another tool called `Neofetch`. Neofetch is a super-conv
 
 # Acknowledgement
 
-[**Arch AUR**](https://aur.archlinux.org/packages/anycable-go) | [**Oh My ZSH**](https://ohmyz.sh) | [**romkatv**](https://github.com/romkatv)
+[**arch aur**](https://aur.archlinux.org/packages/anycable-go) | [**oh my zsh**](https://ohmyz.sh) | [**romkatv**](https://github.com/romkatv)
