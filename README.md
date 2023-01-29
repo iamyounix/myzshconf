@@ -162,6 +162,8 @@ Now, we need to install another tool called `Neofetch`. Neofetch is a super-conv
 
 ## Results
 
+![Arch](https://user-images.githubusercontent.com/72515939/215356327-2d6c8f9f-c616-48a6-af30-37c2fb5454a3.png)
+
 ## Acknowledgement
 
 [**arch aur**](https://aur.archlinux.org/packages/anycable-go) | [**oh my zsh**](https://ohmyz.sh) | [**romkatv**](https://github.com/romkatv)
