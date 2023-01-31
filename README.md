@@ -160,10 +160,10 @@ Now, we need to install another tool called `Neofetch`. Neofetch is a super-conv
 
 ### VSCode Terminal Integration
 
-Here is the simplest setup, intergrated our zsh setting to Visual Studio Code app.
+Here is the simplest setup: we integrated our `zsh` settings into the **Visual Studio Code** app.
 
-1. Open VSCode, go to Menubar -  `File` / `Preferences` / `Settings`.
-2. Find small icon on the top left on `Settings` tab. Hover you mouse into it without clicking to reveal its name as `Open Setting with JSON`.
+1. Launch VSCode and navigate to the Menubar - `File` / `Preferences` / `Settings`.
+2. Locate the small icon in the upper left corner of the `Settings` tab. Hover your mouse over it without clicking to reveal its name: `Open Setting with JSON.`
 
     ![opensettingswithterminal][settings-json]
 
@@ -177,7 +177,7 @@ Here is the simplest setup, intergrated our zsh setting to Visual Studio Code ap
     }
     ```
 
-4. After done, to Menubar -  `File` / `Save` at current settings tab.
+4. After done, navigate to the Menubar - `File` and `Save` current settings.
 
 ## Results
 
