@@ -11,6 +11,7 @@ Table of content
   - [Powerlevel10k](#powerlevel10k)
     - [Configure Z Shell](#configure-z-shell)
     - [Install System Info](#install-system-info)
+    - [VSCode Terminal Integration](#vscode-terminal-integration)
   - [Results](#results)
 - [Acknowledgement](#acknowledgement)
 
@@ -164,7 +165,7 @@ Here is the simplest setup, intergrated our zsh setting to Visual Studio Code ap
 1. Open VSCode, go to Menubar -  `File` / `Preferences` / `Settings`.
 2. Find small icon on the top left on `Settings` tab. Hover you mouse into it without clicking to reveal its name as `Open Setting with JSON`.
 
-![opensettingswithterminal][settings-json]
+    ![opensettingswithterminal][settings-json]
 
 3. Then, click it and add this code, `"terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"`. Below is an example.
 
@@ -184,17 +185,16 @@ Here is the simplest setup, intergrated our zsh setting to Visual Studio Code ap
 ![konsole][kdekonsole]
 
 **VSCode**
-![vscode][def]
+![vscode][vscode]
 
 ## Acknowledgement
 
 [**arch aur**][arch-aur] | [**oh my zsh**][oh-my-zsh] | [**romkatv**][romkatv]
 
 [arch-aur]: https://aur.archlinux.org/packages/anycable-go
-
 [kdekonsole]: References/Picture/Konsole.png
 [nerdfonts-download]: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
 [oh-my-zsh]: https://ohmyz.sh
 [romkatv]: https://github.com/romkatv
 [settings-json]: References/Picture/OpenSettingswithJSON.png
-[def]: References/Picture/VSCodeTerminal.png
+[vscode]: References/Picture/VSCodeTerminal.png
