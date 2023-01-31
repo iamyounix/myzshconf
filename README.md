@@ -157,16 +157,44 @@ Now, we need to install another tool called `Neofetch`. Neofetch is a super-conv
         neofetch
         ```
 
+### VSCode Terminal Integration
+
+Here is the simplest setup, intergrated our zsh setting to Visual Studio Code app.
+
+1. Open VSCode, go to Menubar -  `File` / `Preferences` / `Settings`.
+2. Find small icon on the top left on `Settings` tab. Hover you mouse into it without clicking to reveal its name as `Open Setting with JSON`.
+
+![opensettingswithterminal][settings-json]
+
+3. Then, click it and add this code, `"terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"`. Below is an example.
+
+    ```json
+    {
+        "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"
+        "workbench.colorTheme": "Xcode Default Dark",
+        "remoteHub.commitDirectlyWarning": "off"
+    }
+    ```
+
+4. After done, to Menubar -  `File` / `Save` at current settings tab.
+
 ## Results
 
-![Arch][arch-linux]
+**KDE-Konsole**
+![konsole][kdekonsole]
+
+**VSCode**
+![vscode][def]
 
 ## Acknowledgement
 
 [**arch aur**][arch-aur] | [**oh my zsh**][oh-my-zsh] | [**romkatv**][romkatv]
 
 [arch-aur]: https://aur.archlinux.org/packages/anycable-go
-[arch-linux]: https://user-images.githubusercontent.com/72515939/215356327-2d6c8f9f-c616-48a6-af30-37c2fb5454a3.png
+
+[kdekonsole]: References/Picture/Konsole.png
 [nerdfonts-download]: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
 [oh-my-zsh]: https://ohmyz.sh
 [romkatv]: https://github.com/romkatv
+[settings-json]: References/Picture/OpenSettingswithJSON.png
+[def]: References/Picture/VSCodeTerminal.png
