@@ -28,7 +28,7 @@ Here, we will use Arch Linux as an example for Z Shell installation.
     sudo pacman -S zsh
     ```
 
-    1. Install `Nerfonts`. Recommend to download: [Fira Code Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip), extract downloaded fonts and install.
+    1. Install `Nerfonts`. Recommend to download: [Fira Code Nerd Fonts][nerdfonts-download], extract downloaded fonts and install.
     2. Use downloaded font on terminal settings, choose mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
     3. Install `Oh My Zsh`. Open terminal, copy and paste code below to start installation
 
@@ -54,15 +54,14 @@ Powerlevel10k is a theme for `Z` shell. It emphasizes speed, flexibility and out
         git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
         ```
 
-        > **Note**: This will automatically install `auto-suggestions` plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add auto-suggestions plugin
-
+        > **Note**: This will automatically install `auto-suggestions` plugins inside **Oh My ZSH** custom directory.
     3. Install highlight syntax
 
         ```zsh
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         ```
 
-        > **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory. Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to add syntax-hightlighting plugin
+        > **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory.
 
 - Configure Powerlevel10k
 
@@ -71,8 +70,6 @@ Powerlevel10k is a theme for `Z` shell. It emphasizes speed, flexibility and out
     ```zsh
     p10k configure 
     ```
-
-    > **Note**: Refer [Editing zsh config](https://github.com/theofficialcopypaste/SimpleZSHSettings/blob/main/README.md#editing-zsh-config) to configure theme.
 
 ### Configure Z Shell
 
@@ -162,8 +159,14 @@ Now, we need to install another tool called `Neofetch`. Neofetch is a super-conv
 
 ## Results
 
-![Arch](https://user-images.githubusercontent.com/72515939/215356327-2d6c8f9f-c616-48a6-af30-37c2fb5454a3.png)
+![Arch][arch-linux]
 
 ## Acknowledgement
 
-[**arch aur**](https://aur.archlinux.org/packages/anycable-go) | [**oh my zsh**](https://ohmyz.sh) | [**romkatv**](https://github.com/romkatv)
+[**arch aur**][arch-aur] | [**oh my zsh**][oh-my-zsh] | [**romkatv**][romkatv]
+
+[arch-aur]: https://aur.archlinux.org/packages/anycable-go
+[arch-linux]: https://user-images.githubusercontent.com/72515939/215356327-2d6c8f9f-c616-48a6-af30-37c2fb5454a3.png
+[nerdfonts-download]: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
+[oh-my-zsh]: https://ohmyz.sh
+[romkatv]: https://github.com/romkatv
