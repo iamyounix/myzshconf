@@ -111,7 +111,7 @@ We need to configure `zsh` to the required state. The configuration is shown bel
             sudo nano /etc/pacman.conf 
             ```
 
-        2. Add `ILoveCandy` below `#Misc option` section
+        2. Add `ILoveCandy` `⍩⃝` below `#Misc option` section
 
             ```nano
             # Misc options
