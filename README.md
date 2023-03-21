@@ -63,6 +63,14 @@ Powerlevel10k is a theme for `Z` shell. It emphasizes speed, flexibility and out
         ```
 
         > **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory.
+        
+    4. Install auto-complete
+
+        ```zsh
+        git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+        ```
+
+        > **Note**: This will automatically install `zsh-autocomplete` plugins inside **Oh My ZSH** custom directory.   
 
 - Configure Powerlevel10k
 
@@ -100,7 +108,7 @@ We need to configure `zsh` to the required state. The configuration is shown bel
         # Custom plugins may be added to $ZSH_CUSTOM/plugins/
         # Example format: plugins=(rails git textmate ruby lighthouse)
         # Add wisely, as too many plugins slow down shell startup.
-        plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+        plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
         ```
 
     3. Additional for Arch. Install `ILoveCandy`, a `pacman` ⍩⃝ like `progress bar` on terminal (Arch Linux)
