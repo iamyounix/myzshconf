@@ -18,7 +18,7 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
 ## Z Shell
 
-Here, we will start z shell installation.
+Here, we will start `z shell` installation.
 
 - **Mac**
   - Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
