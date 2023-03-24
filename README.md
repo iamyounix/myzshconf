@@ -7,12 +7,9 @@
 Table of content
 
 - [Introduction](#introduction)
-  - [Z Shell](#z-shell)
-  - [Powerlevel10k](#powerlevel10k)
-    - [Configure Z Shell](#configure-z-shell)
-    - [Install System Info](#install-system-info)
-    - [VSCode Terminal Integration](#vscode-terminal-integration)
-  - [Results](#results)
+- [Z Shell](#z-shell)
+  - [Plugin Installation](#plugin-installation)
+  - [Configuration](#configuration)
 - [Acknowledgement](#acknowledgement)
 
 ## Introduction
@@ -23,186 +20,96 @@ The Z shell (also known as zsh) is a Unix shell that is built on top of bash (th
 
 Here, we will use Arch Linux as an example for Z Shell installation.
 
-- Arch:
+- **Mac**
+	- Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
+	
+- **Arch**
 
-    ```bash
-    sudo pacman -S zsh
-    ```
+	- Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
 
-    1. Install `Nerfonts`. Recommend to download: [Fira Code Nerd Fonts][nerdfonts-download], extract downloaded fonts and install.
-    2. Use downloaded font on terminal settings, choose mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
-    3. Install `Oh My Zsh`. Open terminal, copy and paste code below to start installation
+		- **Ubuntu**
+		```bash
+		sudo apt install zsh
+		```
+		- **Fedora**
+		```bash
+		sudo dnf install zsh
+		```
+		- **Arch**
+		```bash
+		sudo pacman -S zsh
+		```
+	- Check zsh version by `zsh --version`
+	- Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads), extract downloaded fonts and install.
+	- Use downloaded font on terminal settings, choose mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
+	- To begin installing **oh my zsh**, copy and paste the code below to any terminal. Please follow the required (post-process) step and make sure your terminal uses `zsh` by default.
 
-        ```zsh
-        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-        ```
+	```zsh
+	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	```
+	
+	-  If you are having trouble setting 'zsh' as your default shell, you have two options: 
+		- Refer [**jakewiesler**/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
+		- Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
 
-## Powerlevel10k
+### Plugin Installation
 
-Powerlevel10k is a theme for `Z` shell. It emphasizes speed, flexibility and out-of-the-box experience.
+- zsh-autosuggestions
 
-- Install Powerlevel10k
+	```zsh
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+	```
 
-    1. Clone zsh to custom directory
+	> **Note**: This will automatically install `auto-suggestions` plugins inside **Oh My ZSH** custom directory.
+		
+- zsh-highlight-syntax
 
-        ```zsh
-        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-        ```
+	```zsh
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+	 ```
 
-    2. Install zsh-autosuggestions
-
-        ```zsh
-        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-        ```
-
-        > **Note**: This will automatically install `auto-suggestions` plugins inside **Oh My ZSH** custom directory.
-    3. Install highlight syntax
-
-        ```zsh
-        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-        ```
-
-        > **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory.
+	> **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory.
         
-    4. Install auto-complete
+- zsh-autocomplete
 
-        ```zsh
-        git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-        ```
+	```zsh
+	git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+	```
 
-        > **Note**: This will automatically install `zsh-autocomplete` plugins inside **Oh My ZSH** custom directory.   
+	> **Note**: This will automatically install `zsh-autocomplete` plugins inside **Oh My ZSH** custom directory.
 
-- Configure Powerlevel10k
 
-  - Required if zsh configuration does not automatically start
+### Configuration
 
-    ```zsh
-    p10k configure 
-    ```
+- Open terminal, open `zshrc` configuration file and start configure basic needs.
 
-### Configure Z Shell
+	```zsh
+	sudo nano ~/.zshrc
+	```
 
-We need to configure `zsh` to the required state. The configuration is shown below:
+	- Set this section
 
-- Oh My ZSH configuration settings
+	```zsh
+	# Set name of the theme to load --- if set to "random", it will
+	# load a random theme each time oh-my-zsh is loaded, in which case,
+	# to know which specific one was loaded, run: echo $RANDOM_THEME
+	# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+	ZSH_THEME="your theme"
+	```
+	
+	> **Note**: Please refer this thi [link](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose your favourite theme.
 
-    ```zsh
-    sudo nano ~/.zshrc
-    ```
+	- Add `zsh-autosuggestions` , `zsh-syntax-highlighting` and `zsh-autocomplete`.
 
-    1. Set this section
-
-        ```nano
-        # Set name of the theme to load --- if set to "random", it will
-        # load a random theme each time oh-my-zsh is loaded, in which case,
-        # to know which specific one was loaded, run: echo $RANDOM_THEME
-        # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-        ZSH_THEME="powerlevel10k/powerlevel10k"
-        ```
-
-    2. Add `zsh-autosuggestions` + `zsh-syntax-highlighting`
-
-        ```nano
-        # Which plugins would you like to load?
-        # Standard plugins can be found in $ZSH/plugins/
-        # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-        # Example format: plugins=(rails git textmate ruby lighthouse)
-        # Add wisely, as too many plugins slow down shell startup.
-        plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
-        ```
-
-    3. Additional for Arch. Install `ILoveCandy`, a `pacman` ⍩⃝ like `progress bar` on terminal (Arch Linux)
-
-        1. Enter this command:
-
-            ```zsh
-            sudo nano /etc/pacman.conf 
-            ```
-
-        2. Add `ILoveCandy` `⍩⃝` below `#Misc option` section
-
-            ```nano
-            # Misc options
-            #UseSyslog
-            Color
-            ParallelDownloads = 5
-            # We cannot check disk space from within a chroot environment
-            #CheckSpace
-            #VerbosePkgLists
-            ILoveCandy
-            ```
-
-### Install System Info
-
-Now, we need to install another tool called `Neofetch`. Neofetch is a super-convenient command-line utility used to fetch system information within a few seconds. It is cross-platform, open-source, and it displays everything ranging from your system’s uptime to the Linux kernel version.
-
-- Adding system info
-
-    1. Install `neofetch`.
-
-        ```zsh
-        sudo pacman -Sy neofetch
-        ```
-
-    2. Prompt quiet mode to ensure `neofetch` bypass `powerlevel10k` [warning].
-
-        ```zsh
-        sudo nano ~/.p10k.zsh
-        ```
-
-    3. Find `typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose` and change this mode to `quiet`. ie: `typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet`.
-    4. Save config and head to `~/.zshrc` config.
-
-        ```zsh
-        sudo nano ~./zshrc
-        ```
-
-    5. Add `neofetch` on ending.
-
-        ```zsh
-        # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-        neofetch
-        ```
-
-### VSCode Terminal Integration
-
-Here is the simplest setup: we integrated our `zsh` settings into the **Visual Studio Code** app.
-
-1. Launch VSCode and navigate to the Menubar - `File` / `Preferences` / `Settings`.
-2. Locate the small icon in the upper left corner of the `Settings` tab. Hover your mouse over it without clicking to reveal its name: `Open Setting with JSON.`
-
-    ![opensettingswithterminal][settings-json]
-
-3. Then, click it and add this code, `"terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"`. Below is an example.
-
-    ```json
-    {
-        "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"
-        "workbench.colorTheme": "Xcode Default Dark",
-        "remoteHub.commitDirectlyWarning": "off"
-    }
-    ```
-
-4. After done, navigate to the Menubar - `File` and `Save` current settings.
-
-## Results
-
-**KDE-Konsole**
-![konsole][kdekonsole]
-
-**VSCode**
-![vscode][vscode]
+	```zsh
+	# Which plugins would you like to load?
+	# Standard plugins can be found in $ZSH/plugins/
+	# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+	# Example format: plugins=(rails git textmate ruby lighthouse)
+	# Add wisely, as too many plugins slow down shell startup.
+	plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
+	```
 
 ## Acknowledgement
 
-[**arch aur**][arch-aur] | [**oh my zsh**][oh-my-zsh] | [**romkatv**][romkatv]
-
-[arch-aur]: https://aur.archlinux.org/packages/anycable-go
-[kdekonsole]: References/Picture/Konsole.png
-[nerdfonts-download]: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
-[oh-my-zsh]: https://ohmyz.sh
-[romkatv]: https://github.com/romkatv
-[settings-json]: References/Picture/OpenSettingswithJSON.png
-[vscode]: References/Picture/VSCodeTerminal.png
+[**arch aur**](https://aur.archlinux.org/packages/anycable-go) | [**oh my zsh**](https://ohmyz.sh)
