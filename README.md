@@ -8,7 +8,7 @@ Table of content
 
 - [Introduction](#introduction)
 - [Z Shell](#z-shell)
-  - [Plugins Installation](#plugin-installation)
+  - [Plugins Installation](#plugins-installation)
   - [Configuration](#configuration)
 - [Acknowledgement](#acknowledgement)
 
