@@ -1,6 +1,6 @@
 # Z Shell Configuration
 
-![OS](https://img.shields.io/badge/OS-Arch-white)
+![OS](https://img.shields.io/badge/OS-Linux/Mac-white)
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
 ![Information](https://img.shields.io/badge/Information-Terminal-yellow)
 
