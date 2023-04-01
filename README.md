@@ -114,6 +114,8 @@ Here, we will start `z shell` installation.
   plugins=(git zsh-autosuggestions zsh-autocomplete zsh-syntax-highlighting)
   ```
 
+  ![terminal](https://user-images.githubusercontent.com/72515939/229264347-7fb532e1-c328-4395-b4a5-42348fc1521b.png)
+
 ## Acknowledgement
 
 [**arch aur**](https://aur.archlinux.org/packages/anycable-go) | [**oh my zsh**](https://ohmyz.sh)
