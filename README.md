@@ -9,7 +9,7 @@ Table of content:
 - [Introduction](#introduction)
 - [Installation](#installation)
   - [Mac](#mac)
-  - [Arch](#arch)
+  - [Linux](#linux)
   - [Oh My ZSH](#oh-my-zsh)
   - [Plugins Installation](#plugins-installation)
 - [Configuration](#configuration)
@@ -27,7 +27,7 @@ Here, we will start `z shell` installation.
 
 - Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
 
-### Arch
+### Linux
 
 - Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
 
