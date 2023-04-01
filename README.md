@@ -52,7 +52,7 @@ Here, we will start `z shell` installation.
 - Check zsh version
 
   ```zsh
-  `zsh --version`
+  zsh --version
   ```
 
 - Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads), extract downloaded fonts and install or visit [here](https://github.com/ryanoasis/nerd-fonts#font-patcher) for more installation method.
