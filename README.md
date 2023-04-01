@@ -54,7 +54,7 @@ Here, we will start `z shell` installation.
   ```zsh
   zsh --version
   ```
-  
+
   ![version](https://user-images.githubusercontent.com/72515939/229268347-1e35b52a-410e-4ab7-a785-dad566e56b04.png)
 
 - Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
@@ -65,9 +65,9 @@ Here, we will start `z shell` installation.
 
 - To begin installing `omz`, copy and paste the code below to any terminal. Please follow the required (pre & post-process) step and make sure your terminal uses `zsh` by default.
 
-    ```zsh
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    ```
+  ```zsh
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
 
 - If you are having trouble setting `zsh` as your default shell, you have two options:
 
@@ -76,33 +76,31 @@ Here, we will start `z shell` installation.
 
 ### Plugins Installation
 
-- Install three `omz` plugins below:
+- Install zsh-autosuggestions, zsh-highlight-syntax and zsh-autocomplete
 
-  - zsh-autosuggestions, zsh-highlight-syntax and zsh-autocomplete
-
-    ```zsh
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-    ```
+  ```zsh
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+  ```
 
 ## Configuration
 
-- Open terminal, open `zshrc` configuration file and start configure basic needs.
+1. Open terminal, open `zshrc` configuration file and start configure basic needs.
 
-  ```zsh
-  sudo nano ~/.zshrc
-  ```
+   ```zsh
+   sudo nano ~/.zshrc
+   ```
 
-  - Set this section
+2. Set this section
 
-  ![name](https://user-images.githubusercontent.com/72515939/229268420-d30baf0c-e8eb-4a93-a8ed-9a486f8cd46a.png)
+   ![name](https://user-images.githubusercontent.com/72515939/229268420-d30baf0c-e8eb-4a93-a8ed-9a486f8cd46a.png)
 
-  > **Note**: Please refer this thi [link](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose your favourite theme.
+   > **Note**: Please refer this thi [link](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose your favourite theme.
 
-  - Add `zsh-autosuggestions` , `zsh-syntax-highlighting` and `zsh-autocomplete`.
+3. Add `zsh-autosuggestions` , `zsh-syntax-highlighting` and `zsh-autocomplete`.
 
-  ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
+   ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
 
-  ![terminal](https://user-images.githubusercontent.com/72515939/229264347-7fb532e1-c328-4395-b4a5-42348fc1521b.png)
+   ![terminal](https://user-images.githubusercontent.com/72515939/229264347-7fb532e1-c328-4395-b4a5-42348fc1521b.png)
 
 ## Acknowledgement
 
