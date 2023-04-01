@@ -6,6 +6,15 @@
 
 Table of content:
 
+- [Introduction](#introduction)
+- [Installation](#installation)
+  - [Mac](#mac)
+  - [Arch](#arch)
+  - [Oh My ZSH](#oh-my-zsh)
+  - [Plugins Installation](#plugins-installation)
+- [Configuration](#configuration)
+- [Acknowledgement](#acknowledgement)
+
 ## Introduction
 
 The Z shell (also known as zsh) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with zsh as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an env.sh file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
@@ -17,7 +26,6 @@ Here, we will start `z shell` installation.
 ### Mac
 
 - Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
--
 
 ### Arch
 
