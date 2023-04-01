@@ -25,54 +25,57 @@ Here, we will start `z shell` installation.
 
 ### Mac
 
-- `Z Shell` became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use `bash` by default unless you change it.
+`Z Shell` became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use `bash` by default unless you change it.
 
 ### Linux
 
-- Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
+1. Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
 
-  - **Ubuntu**
+   **Ubuntu**
 
-    ```bash
-    sudo apt install zsh
-    ```
+   ```bash
+   sudo apt install zsh
+   ```
 
-  - **Fedora**
+   **Fedora**
 
-    ```bash
-    sudo dnf install zsh
-    ```
+   ```bash
+   sudo dnf install zsh
+   ```
 
-  - **Arch**
+   **Arch**
 
-    ```bash
-    sudo pacman -S zsh
-    ```
+   ```bash
+   sudo pacman -S zsh
+   ```
 
-- Check zsh version
+2. Check zsh version
 
-  ```zsh
-  zsh --version
-  ```
+   ```zsh
+   zsh --version
+   ```
 
-  ![version](https://user-images.githubusercontent.com/72515939/229268347-1e35b52a-410e-4ab7-a785-dad566e56b04.png)
+   ![version](https://user-images.githubusercontent.com/72515939/229268347-1e35b52a-410e-4ab7-a785-dad566e56b04.png)
 
-- Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
-- Extract downloaded fonts and install or visit [here](https://github.com/ryanoasis/nerd-fonts#font-patcher) for more installation method.
-- Use downloaded font on terminal settings, set mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
+3. Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
+
+4. Extract downloaded fonts and install or visit [here](https://github.com/ryanoasis/nerd-fonts#font-patcher) for more installation method.
+
+5. Use downloaded font on terminal settings, set mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
 
 ### Oh My ZSH
 
-- To begin installing `omz`, copy and paste the code below to any terminal. Please follow the required (pre & post-process) step and make sure your terminal uses `zsh` by default.
+1. To begin installing `omz`, copy and paste the code below to any terminal. Please follow the required (pre & post-process) step and make sure your terminal uses `zsh` by default.
 
-  ```zsh
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  ```
+   ```zsh
+   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
 
-- If you are having trouble setting `zsh` as your default shell, you have two options:
+2. If you are having trouble setting `zsh` as your default shell, you have two options:
 
-  - Refer [**jakewiesler**/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
-  - Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
+3. Refer [jakewiesler*/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
+
+4. Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
 
 ### Plugins Installation
 
