@@ -103,7 +103,7 @@ Here, we will start `z shell` installation.
 
    ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
 
-   ![terminal](https://user-images.githubusercontent.com/72515939/229264347-7fb532e1-c328-4395-b4a5-42348fc1521b.png)
+   ![2023-04-01 14-50-33](https://user-images.githubusercontent.com/72515939/229271070-751bf715-a80f-426c-b1ec-bd49519f2e3b.gif) 
 
 ## Acknowledgement
 
