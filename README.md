@@ -4,86 +4,75 @@
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
 ![Information](https://img.shields.io/badge/Information-Terminal-yellow)
 
-Table of content
-
-- [Introduction](#introduction)
-- [Z Shell](#z-shell)
-  - [Plugins Installation](#plugins-installation)
-  - [Configuration](#configuration)
-- [Acknowledgement](#acknowledgement)
+Table of content:
 
 ## Introduction
 
 The Z shell (also known as zsh) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with zsh as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an env.sh file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
 
-## Z Shell
+## Installation
 
 Here, we will start `z shell` installation.
 
-- **Mac**
-  - Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
-- **Arch**
+### Mac
 
-  - Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
+- Z Shell (zsh) became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use Bash by default unless you change it.
+-
 
-    - **Ubuntu**
+### Arch
+
+- Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
+
+  - **Ubuntu**
 
     ```bash
     sudo apt install zsh
     ```
 
-    - **Fedora**
+  - **Fedora**
 
     ```bash
     sudo dnf install zsh
     ```
 
-    - **Arch**
+  - **Arch**
 
     ```bash
     sudo pacman -S zsh
     ```
 
-  - Check zsh version by `zsh --version`
-  - Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads), extract downloaded fonts and install.
-  - Use downloaded font on terminal settings, choose mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
-  - To begin installing **oh my zsh**, copy and paste the code below to any terminal. Please follow the required (pre & post-process) step and make sure your terminal uses `zsh` by default.
+- Check zsh version
+
+  ```zsh
+  `zsh --version`
+  ```
+
+- Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads), extract downloaded fonts and install or visit [here](https://github.com/ryanoasis/nerd-fonts#font-patcher) for more installation method.
+- Use downloaded font on terminal settings, set mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
+
+### Oh My ZSH
+
+- To begin installing **oh my zsh**, copy and paste the code below to any terminal. Please follow the required (pre & post-process) step and make sure your terminal uses `zsh` by default.
 
     ```zsh
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
 
-  - If you are having trouble setting 'zsh' as your default shell, you have two options:
-    - Refer [**jakewiesler**/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
-    - Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
+- If you are having trouble setting 'zsh' as your default shell, you have two options:
+  - Refer [**jakewiesler**/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
+  - Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
 
 ### Plugins Installation
 
-- zsh-autosuggestions
+- Install three `omz` plugins below:
 
-  ```zsh
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-  ```
+  - zsh-autosuggestions, zsh-highlight-syntax and zsh-autocomplete
 
-  > **Note**: This will automatically install `auto-suggestions` plugins inside **Oh My ZSH** custom directory.
+    ```zsh
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+    ```
 
-- zsh-highlight-syntax
-
-  ```zsh
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-  ```
-
-  > **Note**: This will automatically install `syntax-highlighting` plugins inside **Oh My ZSH** custom directory.
-
-- zsh-autocomplete
-
-  ```zsh
-  git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-  ```
-
-  > **Note**: This will automatically install `zsh-autocomplete` plugins inside **Oh My ZSH** custom directory.
-
-### Configuration
+## Configuration
 
 - Open terminal, open `zshrc` configuration file and start configure basic needs.
 
