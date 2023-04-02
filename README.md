@@ -114,7 +114,7 @@ Here, we will start `z shell` installation.
 
    ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
 
-   ![convert](https://user-images.githubusercontent.com/72515939/229334386-ac2d25cc-43b0-405f-ab91-a9fe99f11dad.gif)
+   ![zshrc_demo](https://user-images.githubusercontent.com/72515939/229334834-d565879e-218a-474b-9238-01461be553e7.gif)
 
 ## Acknowledgement
 
