@@ -114,7 +114,7 @@ Here, we will start `z shell` installation.
 
    ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
 
-   ![2023-04-02 at 13 51 19 - Cyan Crab](https://user-images.githubusercontent.com/72515939/229334289-aa6ef5a5-8c3d-47f3-9e0b-e80f49884567.gif)
+   ![convert](https://user-images.githubusercontent.com/72515939/229334386-ac2d25cc-43b0-405f-ab91-a9fe99f11dad.gif)
 
 ## Acknowledgement
 
