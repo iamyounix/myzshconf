@@ -4,8 +4,6 @@
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
 ![Information](https://img.shields.io/badge/Information-Terminal-yellow)
 
-![terminalpng](https://github.com/iamyounix/z_shell_config/assets/72515939/f60f564a-aeea-46a0-bb46-398f9c550b7e)
-
 Table of content:
 
 - [Introduction](#introduction)
@@ -20,6 +18,8 @@ Table of content:
 ## Introduction
 
 The `Z shell` (also known as `zsh`) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with `zsh` as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an env.sh file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
+
+![terminalpng](https://github.com/iamyounix/z_shell_config/assets/72515939/f60f564a-aeea-46a0-bb46-398f9c550b7e)
 
 ## Installation
 
