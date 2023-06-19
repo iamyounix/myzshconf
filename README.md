@@ -4,6 +4,8 @@
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
 ![Information](https://img.shields.io/badge/Information-Terminal-yellow)
 
+![terminalpng](https://github.com/iamyounix/z_shell_config/assets/72515939/f60f564a-aeea-46a0-bb46-398f9c550b7e)
+
 Table of content:
 
 - [Introduction](#introduction)
