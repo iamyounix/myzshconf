@@ -17,9 +17,7 @@ Table of content:
 
 ## Introduction
 
-The `Z shell` (also known as `zsh`) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with `zsh` as it makes dealing with configuration, plugins and themes a lot nicer. We've also included an env.sh file where we store our aliases, exports, path changes etc. We put this in a separate file to not pollute our main configuration file too much. This file is found in the bottom of this page.
-
-![terminalpng](https://github.com/iamyounix/z_shell_config/assets/72515939/f60f564a-aeea-46a0-bb46-398f9c550b7e)
+The `Z shell` (also known as `zsh`) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with `zsh` as it makes dealing with configuration, plugins and themes a lot nicer. 
 
 ## Installation
 
@@ -27,11 +25,11 @@ Here, we will start `z shell` installation.
 
 ### Mac
 
-`Z Shell` became the default in macOS Catalina. Zsh is only the default shell on newly created user accounts, so any existing accounts you have on an upgraded Mac will still use `bash` by default unless you change it.
+ - Most mac already have this feature, zsh will be default after [Oh My Zsh](https://ohmyz.sh/) installation.
 
 ### Linux
 
-1. Install required file. To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
+ - To check, use this command `echo $0`. If the output is `bash`, proceed installation with command below:
 
    **Ubuntu**
 
@@ -57,13 +55,11 @@ Here, we will start `z shell` installation.
    zsh --version
    ```
 
-   ![version](https://user-images.githubusercontent.com/72515939/229268347-1e35b52a-410e-4ab7-a785-dad566e56b04.png)
+3. This feature require modified fonts, .  NerdFonts need to be installed. Since there was too many font available online, you may download here:
+	 - [Source 1](https://www.nerdfonts.com/font-downloads)
+	 - [Source 2](https://www.nerdfonts.com/)
 
-3. Install `Nerfonts`. Choose any [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
-
-4. Extract downloaded fonts and install or visit [here](https://github.com/ryanoasis/nerd-fonts#font-patcher) for more installation method.
-
-5. Use downloaded font on terminal settings, set mono type font. ie: `FiraCode Nerd Font Mono` to your Terminal.
+4. After install, terminal need to be restart.
 
 ### Oh My ZSH
 
@@ -73,12 +69,6 @@ Here, we will start `z shell` installation.
    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
    ```
 
-2. If you are having trouble setting `zsh` as your default shell, you have two options:
-
-3. Refer [jakewiesler*/zsh-as-default-shell](https://www.jakewiesler.com/blog/zsh-as-default-shell) to complete the step.
-
-4. Create new terminal profile and set terminal to use `zsh` shell manually by change `usr/bin/bash` to `usr/bin/zsh` or `bin/bash` to `bin/zsh`.
-
 ### Plugins Installation
 
 1. Install zsh-autosuggestions
@@ -86,6 +76,7 @@ Here, we will start `z shell` installation.
    ```zsh
    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
    ```
+   
 2. Install zsh-syntax-highlighting
 
    ```zsh
@@ -97,7 +88,7 @@ Here, we will start `z shell` installation.
    ```zsh
    git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
    ```
-
+   
 ## Configuration
 
 1. Open terminal, open `zshrc` configuration file and start configure basic needs.
@@ -106,17 +97,12 @@ Here, we will start `z shell` installation.
    sudo nano ~/.zshrc
    ```
 
-2. Set this section
+2. Find `ZHS_THEME="robbyrussel"` to `ZHS_THEME="your_theme"`. Checkout this [wiki](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) and choose. 
 
-   ![name](https://user-images.githubusercontent.com/72515939/229268420-d30baf0c-e8eb-4a93-a8ed-9a486f8cd46a.png)
+3. Find `plugins=(git)` section on the same documents. Add this comment after `git`, 
+	 - i.e. `git zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete`
 
-   > **Note**: Please refer this thi [link](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose your favourite theme.
-
-3. Add `zsh-autosuggestions` , `zsh-syntax-highlighting` and `zsh-autocomplete`.
-
-   ![plugin](https://user-images.githubusercontent.com/72515939/229268427-fe94e8b6-1041-4f9d-97f0-c7c1f2f35f03.png)
-
-   ![zshrc_demo](https://user-images.githubusercontent.com/72515939/229334834-d565879e-218a-474b-9238-01461be553e7.gif)
+4. Change chosen nerdfonts to your terminal.
 
 ## Acknowledgement
 
