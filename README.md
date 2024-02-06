@@ -1,4 +1,4 @@
-# Z Shell Configuration
+# myzshelconf
 
 ![OS](https://img.shields.io/badge/OS-Linux/Mac-white)
 ![Check](https://img.shields.io/badge/Status-Pass-brightgreen)
